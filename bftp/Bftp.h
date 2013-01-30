@@ -8,6 +8,7 @@
 
 #include "AnswerWidget.h"
 #include "ResultWidget.h"
+#include "MistakesAndRightAnswersDialog.h"
 #include "../bftpmaker/IOFiles.h"
 #include "../bftpmaker/Answer.h"
 #include "../bftpmaker/Question.h"
@@ -35,6 +36,7 @@ public slots:
 private:
 	Ui::Bftp *ui;
 	ResultWidget *resultW;
+	MistakesAndRightAnswersDialog *mAndRD;
 	Test _test;
 	QToolButton *nextQ, *prevQ, *finishT;
 	QLabel *testProgress;
@@ -49,6 +51,9 @@ private:
 	void rememberAnswers();
 	void clearAnsList();
 	void uncheckRad();
+
+private slots:
+	void showMistakes();
 
 };
 

@@ -90,14 +90,14 @@
     <item>
      <layout class="QHBoxLayout" name="optionsL">
       <item>
-       <widget class="QCheckBox" name="rightCB">
+       <widget class="QCheckBox" name="mistCB">
         <property name="text">
          <string>Show mistakes</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="mistCB">
+       <widget class="QCheckBox" name="rightCB">
         <property name="text">
          <string>Show Right answers</string>
         </property>

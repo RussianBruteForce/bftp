@@ -42,3 +42,9 @@ void ResultWidget::on_send_clicked()
 {
 
 }
+
+void ResultWidget::on_sm_clicked()
+{
+	emit showMistakes();
+	this->accept();
+}

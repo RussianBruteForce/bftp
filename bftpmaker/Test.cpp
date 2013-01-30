@@ -52,12 +52,12 @@ void Test::removeQuestion(int at)
 
 bool Test::showMistakes()
 {
-	return main.value("showMistakes").toBool(true);
+	return main.value("showMistakes").toBool();
 }
 
 bool Test::showRightAnswers()
 {
-	return main.value("showRight").toBool(true);
+	return main.value("showRight").toBool();
 }
 
 QJsonObject Test::toJson()

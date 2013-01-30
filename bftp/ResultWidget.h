@@ -22,8 +22,13 @@ private slots:
 
 	void on_send_clicked();
 
+	void on_sm_clicked();
+
 private:
 	Ui::ResultWidget *ui;
+
+signals:
+	void showMistakes();
 };
 
 #endif // RESULTWIDGET_H

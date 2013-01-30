@@ -112,7 +112,10 @@ void Bftp::count()
 	qDebug() << "SCORE " << _score;
 
 	resultW = new ResultWidget(_test, _score, this);
+	connect(resultW, &ResultWidget::showMistakes,
+	         this, &Bftp::showMistakes);
 	resultW->exec();
+	resultW->deleteLater();
 
 	//ui->centralWidget->setEnabled(true);
 }
@@ -166,4 +169,12 @@ void Bftp::uncheckRad()
 	for (int i = 0; i < ansList.size(); i++) {
 		ansList.at(i)->setChecked(false);
 	}
+}
+
+void Bftp::showMistakes()
+{
+	mAndRD = new MistakesAndRightAnswersDialog(checkingGrid, _test.questions(), _test.showRightAnswers());
+	qDebug() << _test.showRightAnswers();
+	mAndRD->exec();
+	mAndRD->deleteLater();
 }
