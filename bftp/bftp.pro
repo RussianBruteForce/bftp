@@ -19,7 +19,8 @@ SOURCES += main.cpp\
         ../bftpmaker/Question.cpp \
         ../bftpmaker/Test.cpp \
         AnswerWidget.cpp \
-    ResultWidget.cpp
+    ResultWidget.cpp \
+    MistakesAndRightAnswersDialog.cpp
 
 HEADERS  += Bftp.h \
         ../bftpmaker/IOFiles.h \
@@ -27,8 +28,10 @@ HEADERS  += Bftp.h \
         ../bftpmaker/Question.h \
         ../bftpmaker/Test.h \
         AnswerWidget.h \
-    ResultWidget.h
+    ResultWidget.h \
+    MistakesAndRightAnswersDialog.h
 
 FORMS    += Bftp.ui \
             AnswerWidget.ui \
-    ResultWidget.ui
+    ResultWidget.ui \
+    MistakesAndRightAnswersDialog.ui
