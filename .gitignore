@@ -1,0 +1,9 @@
+ui_*.h
+moc_*
+*.user
+*.user.*
+Makefile
+qtnp
+*.o
+qrc_*
+*-build-*
